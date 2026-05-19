@@ -1,0 +1,12 @@
+# Recursive function to calculate stairs climbed
+
+def stairs(n):
+
+    if n == 1:
+        return 1
+
+    return n + stairs(n - 1)
+
+steps = int(input("Enter number of steps: "))
+
+print("Total stairs climbed =", stairs(steps))
