@@ -1,0 +1,17 @@
+# Shop inventory dictionary
+
+inventory = {
+    "Pen": 20,
+    "Book": 15,
+    "Pencil": 30
+}
+
+item = input("Enter item name: ")
+stock = int(input("Enter stock quantity: "))
+
+if item in inventory:
+    inventory[item] += stock
+else:
+    inventory[item] = stock
+
+print("Updated Inventory:", inventory)
