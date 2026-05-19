@@ -1,0 +1,8 @@
+# Traffic police system program
+
+speed = int(input("Enter vehicle speed: "))
+
+if speed > 60:
+    print("Fine message: Overspeeding detected!")
+else:
+    print("No fine")
