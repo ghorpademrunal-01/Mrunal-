@@ -1,0 +1,14 @@
+# Library dictionary
+
+library = {
+    "Maths": 500,
+    "Science": 650,
+    "English": 400
+}
+
+book = input("Enter book name: ")
+new_price = int(input("Enter new price: "))
+
+library[book] = new_price
+
+print("Updated Library:", library)
