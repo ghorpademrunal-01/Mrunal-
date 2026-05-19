@@ -1,0 +1,12 @@
+# Division by zero handling
+
+try:
+    bill = int(input("Enter total bill amount: "))
+    people = int(input("Enter number of people: "))
+
+    share = bill / people
+
+    print("Each person pays =", share)
+
+except ZeroDivisionError:
+    print("Number of people cannot be zero")
