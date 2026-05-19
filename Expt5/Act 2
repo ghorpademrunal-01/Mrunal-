@@ -1,0 +1,8 @@
+# Roll numbers in sets
+
+classA = {1, 2, 3, 4, 5}
+classB = {4, 5, 6, 7, 8}
+
+common = classA.intersection(classB)
+
+print("Students present in both classes:", common)
