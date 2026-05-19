@@ -1,0 +1,17 @@
+import streamlit as st
+
+st.set_page_config(page_title="BMI Health Checker", page_icon="⚕️")
+
+st.title("⚕️ BMI Health Checker")
+
+st.write("Enter your details below to check your BMI and health status.")
+
+# User Inputs
+weight = st.number_input("Enter your weight (in kg)", min_value=1.0, step=0.1)
+height = st.number_input("Enter your height (in meters)", min_value=0.5, step=0.01)
+
+# BMI Calculation
+if st.button("Check BMI"):
+    bmi = weight / (height ** 2)
+
+    st.subheader(f"Your BMI
